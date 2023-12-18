@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D43B40982B30F0D100405AA0 /* cartandcheckout.h in Headers */ = {isa = PBXBuildFile; fileRef = D43B40972B30F0D100405AA0 /* cartandcheckout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D43B40A02B30F10D00405AA0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43B409F2B30F10D00405AA0 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D43B40942B30F0D100405AA0 /* cartandcheckout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cartandcheckout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43B40972B30F0D100405AA0 /* cartandcheckout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cartandcheckout.h; sourceTree = "<group>"; };
+		D43B409F2B30F10D00405AA0 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +47,18 @@
 		D43B40962B30F0D100405AA0 /* cartandcheckout */ = {
 			isa = PBXGroup;
 			children = (
+				D43B409E2B30F0E800405AA0 /* Classes */,
 				D43B40972B30F0D100405AA0 /* cartandcheckout.h */,
 			);
 			path = cartandcheckout;
+			sourceTree = "<group>";
+		};
+		D43B409E2B30F0E800405AA0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D43B409F2B30F10D00405AA0 /* Common.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +104,7 @@
 				TargetAttributes = {
 					D43B40932B30F0D100405AA0 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -129,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D43B40A02B30F10D00405AA0 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +271,7 @@
 		D43B409C2B30F0D100405AA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -281,6 +295,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +304,7 @@
 		D43B409D2B30F0D100405AA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
